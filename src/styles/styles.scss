@@ -1,0 +1,18 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "_reset.css";
+@import "material-kit";
+
+body {
+  min-height: 100vh;
+}
+
+.slide {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &-container {
+
+  }
+}
