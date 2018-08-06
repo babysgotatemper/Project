@@ -1,22 +1,122 @@
-<div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/HTML5MainM.jpg')">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto">
-        <div class="brand text-center">
-          <h1>HTML</h1>
-          <h3 class="title text-center">HyperText Markup Language</h3>
-          <h3 class="title text-center">(Мова розмітки гіпертекстових документів)</h3>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="page-header header-filter"
+     data-parallax="true"
+     style="background-image: url('assets/img/IOT/HTML5MainM.jpg')">
 </div>
-
 
 <div class="main main-raised">
   <div class="container">
     <div class="section text-center">
       <h2 class="title">HTML</h2>
+      <h4>
+        (англ. HyperText Markup Language) стандартна мова розмітки веб-сторінок в Інтернеті
+      </h4>
+    </div>
+    <!---->
+    <div class="card">
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="card-header card-header-rose">
+        <h2 class="card-title">
+          DOM (Document Object Model)
+        </h2>
+      </a>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="h4 card-title">
+              DOCTYPE
+            </h4>
+            <p>
+              Цей рядок допоможе браузеру визначити, як правильно інтерпретувати даний документ
+            </p>
+            <h4 class="h4 card-title">
+              html
+            </h4>
+            <p>
+              визначає початок і кінець документу
+            </p>
+            <h4 class="h4 card-title">head</h4>
+            <p>містить "технічну" інформацію про документ, наприклад формат кодування meta або title який визначає ім'я всього документа, яке відображається в заголовку вікна браузера</p>
+            <h4 class="h4 card-title">body</h4>
+            <p>В тілі документу знаходиться все те, що відображається на сторінці: текст, картинки, таблиці. Тобто більшість ваших HTML-експериментів буде відбуватись в просторі між тегами body</p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/img/IOT/dom.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <br>
+    <div class="card">
+      <div class="card-header card-header-rose">
+        <h2 class="card-title">
+          Tag (елемент мови розмітки HTML)
+        </h2>
+      </div>
+
+      <div class="card-body">
+        <blockquote class="blockquote">
+          Теги не чутливі до регістру (BR Br br)
+        </blockquote>
+
+        <blockquote class="blockquote">
+          Якщо який-небудь тег або його атрибут був написаний невірно, то браузер проігнорує подібний тег і буде відображати текст так, немов тега і не було.
+        </blockquote>
+
+        <blockquote class="blockquote">Щоб розширити можливості окремих тегів і більш гнучко управляти вмістом контейнерів застосовуються атрибути тегів.
+        </blockquote>
+      </div>
+
+      <div class="card-body">
+        <h4 class="card-title text-center">Типи тегів</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="nav nav-pills nav-pills-rose flex-column">
+              <li class="nav-item"><a class="nav-link active" href="#tab1" data-toggle="tab">Одинарні</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab">Парні</a></li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1">
+                <div class="btn btn-primary">IMG</div>
+                <div class="btn btn-primary">BR</div>
+                <div class="btn btn-primary">HR</div> etc
+              </div>
+              <div class="tab-pane" id="tab2">
+                <div class="btn btn-primary">DIV</div>
+                <div class="btn btn-primary">P</div>
+                <div class="btn btn-primary">UL>LI</div>
+                <div class="btn btn-primary">H1...H6</div> etc
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <h4 class="card-title text-center">Типи тегів (за призначенням)</h4>
+        <blockquote class="blockquote">
+          Теги верхнього рівня (Ці теги призначені для формування структури веб-сторінки і визначають розділ заголовка і тіла документа.
+          <br>
+          <span class="btn btn-primary">html</span>
+          <span class="btn btn-primary">head</span>
+          <span class="btn btn-primary">body</span>
+        </blockquote>
+        <blockquote class="blockquote">
+          Теги заголовку документу
+          <br>
+          <span class="btn btn-primary">title</span>
+          <span class="btn btn-primary">meta</span>
+          <span class="btn btn-primary">link</span>
+        </blockquote>
+
+        <blockquote class="blockquote">
+          Теги елементу
+          <br>
+          <span class="btn btn-primary">body</span>
+        </blockquote>
+      </div>
     </div>
   </div>
+  <br><br>
 </div>

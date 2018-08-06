@@ -6,13 +6,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { HtmlComponent } from './pages/html/html.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
+import { TemplateComponent } from './pages/template/template.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HtmlComponent
+    HtmlComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,7 @@ import {RouterModule} from '@angular/router';
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'html', component: HtmlComponent},
+      {path: 'template', component: TemplateComponent},
       {path: '**', redirectTo: ''},
     ])
   ],
