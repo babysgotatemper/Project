@@ -1,0 +1,47 @@
+<br><br><br><br>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer opened class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+
+    <button type="button" mat-button (click)="drawer.toggle()">
+      X
+    </button>
+    <div class="main main-raised">
+      <div class="container">
+        <div class="section text-center">
+          <h2 class="title">Your main section here</h2>
+        </div>
+        <div class="card">
+          <div class="card-header card-header-text card-header-primary">
+            <div class="card-text">
+              <h4 class="card-title">Here is the Text</h4>
+            </div>
+          </div>
+          <div class="card-body">
+            <mat-list>
+              <mat-list-item> Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper Pepper  </mat-list-item>
+              <mat-list-item> Salt </mat-list-item>
+              <mat-list-item> Paprika </mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    <mat-card style="min-height: 100vh">
+      <mat-card-title>	Card title </mat-card-title>
+      <mat-card-subtitle>	Card subtitle </mat-card-subtitle>
+      <mat-card-content>	Primary card content. Intended for blocks of text </mat-card-content>
+          <img src="assets/img/bg3.jpg" mat-card-image>
+      <mat-card-actions>	Container for buttons at the bottom of the card </mat-card-actions>
+      <mat-card-footer> footer </mat-card-footer>
+    </mat-card>
+
+  </div>
+
+</mat-drawer-container>
