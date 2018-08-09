@@ -26,6 +26,7 @@ import { CssComponent } from './pages/css/css.component';
       {path: '', component: HomeComponent},
       {path: 'html', component: HtmlComponent},
       {path: 'css', component: CssComponent},
+      {path: 'pages', loadChildren: './pages/pages.module#PagesModule'},
       {path: 'template', component: TemplateComponent},
       {path: '**', redirectTo: ''},
     ])
