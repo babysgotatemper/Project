@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialComponent } from './material/material.component';
 import {RouterModule} from "@angular/router";
 import {MatCardModule, MatListModule, MatSidenavModule} from "@angular/material";
+import { GistComponent } from './gist/gist.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import {MatCardModule, MatListModule, MatSidenavModule} from "@angular/material"
     ])
   ],
   declarations: [
-    MaterialComponent
+    MaterialComponent,
+    GistComponent
   ]
 })
 export class PagesModule { }

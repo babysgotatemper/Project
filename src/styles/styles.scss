@@ -3,6 +3,8 @@
 @import "_reset.css";
 @import "material-kit";
 
+$radius: 2px;
+
 body {
   min-height: 100vh;
   font-size: 16px !important;
@@ -16,5 +18,26 @@ body {
 
   &-container {
 
+  }
+}
+
+.tag {
+  background-color: $bg-primary;
+  color: #fff;
+  border-radius: $radius;
+  font-family: "Courier New";
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 1px;
+  &:before,
+  &:after {
+    padding: 0 5px;
+    color: $bg-dark;
+  }
+  &:before {
+    content: '<';
+  }
+  &:after {
+    content: '>';
   }
 }
