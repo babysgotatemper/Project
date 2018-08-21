@@ -7,12 +7,14 @@
   <div class="container">
     <div class="section text-center">
       <h2 class="title">CSS3</h2>
-      <h4>(англ. Cascading Style Sheets) — спеціальна мова, що використовується для опису сторінок, написаних мовами розмітки даних (HTML).</h4>
+      <h4>(англ. Cascading Style Sheets) — спеціальна мова, що використовується для опису сторінок, написаних мовами
+        розмітки даних (HTML).</h4>
     </div>
+    <img src="assets/img/css/css.gif" alt="">
     <div class="section">
       <blockquote class="blockquote">
         <code>
-          селектор 	&#x7b;<br>
+          селектор &#x7b;<br>
           властивість: значення;<br>
           &#x7d;
         </code>
@@ -26,9 +28,11 @@
         <ul class="ul">
           <li>background-color: колір фону елемента</li>
           <li>background-image: зображення фону елемента</li>
-          <li>background-repeat	: повтор фонового зображення (по замовчуванню стоїть значення повтору, можна зробити без повтору, і повтор по осі Х або У)використовується для паттернів</li>
+          <li>background-repeat : повтор фонового зображення (по замовчуванню стоїть значення повтору, можна зробити без
+            повтору, і повтор по осі Х або У)використовується для паттернів
+          </li>
           <li>background-position: позиція фонового зображення</li>
-          <li>background-attachment:	вказує прокручувати фонове зображення разом з текстом чи ні</li>
+          <li>background-attachment: вказує прокручувати фонове зображення разом з текстом чи ні</li>
         </ul>
       </div>
     </section>
@@ -57,14 +61,18 @@
         <ul class="ul">
           <li>font-size: розмір шрифту</li>
           <li>font-style: стиль шрифту (normal italic)</li>
-          <li>font-weight: жирність шрифту(lighter, normal, bold, bolder) або (100-900) з кроком 100, 400 відповідає нормальному шрифту, а 700 - напівжирний</li>
-          <li>font-family:	задає сімейство шрифту для елемента ("Times New Roman", Georgia, Serif)</li>
+          <li>font-weight: жирність шрифту(lighter, normal, bold, bolder) або (100-900) з кроком 100, 400 відповідає
+            нормальному шрифту, а 700 - напівжирний
+          </li>
+          <li>font-family: задає сімейство шрифту для елемента ("Times New Roman", Georgia, Serif)</li>
         </ul>
         <ul class="ul">
           <li>text-align: (left right center justify) задає спосіб вирівнювання тексту по горизонталі.</li>
           <li>color: колір тексту</li>
           <li>letter-spacing: відстань між буквами</li>
-          <li>text-transform: (none, capitalize, uppercase, lowercase)перетворення тексту в заголовні або рядкові літери.</li>
+          <li>text-transform: (none, capitalize, uppercase, lowercase)перетворення тексту в заголовні або рядкові
+            літери.
+          </li>
           <li>text-decoration: (none, underline, overline, line-through)оформлення підкреслення тексту.</li>
         </ul>
       </div>
@@ -74,7 +82,7 @@
         <h3>Властивості списків</h3>
         <ul class="ul">
           <li>list-style-image: замінює маркер пункту списку на зображення</li>
-          <li>list-style-position:	(inside, outside)визначає положення маркера списку.</li>
+          <li>list-style-position: (inside, outside)визначає положення маркера списку.</li>
           <li>list-style-type: визначає тип маркера пункту списку.</li>
         </ul>
       </div>
@@ -85,13 +93,113 @@
           Універсальні властивості
         </h3>
         <ul class="ul">
-          <li>background: (background-attachment background-color background-image background-position background-repeat inherit)</li>
+          <li>background: (background-attachment background-color background-image background-position background-repeat
+            inherit)
+          </li>
           <li>border: (border-width border-style border-color inherit)</li>
           <li>margin: (top right botton left), (top-bottom left-right), (auto)</li>
           <li>padding: (top right botton left), (top-bottom left-right)</li>
           <li>text-shadow: (зсувХ зсувY розмиття колір) додає тінь до тексту.</li>
           <li>box-shadow: (зсувХ зсувY розмиття колір) додає тінь до блоку.</li>
           <li>font: weight size/line-height family</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3>
+          Способи підключення на сторінку
+        </h3>
+        <ol class="list">
+          <li>Внутрішні таблиці стилів. При цьому стилі задаються за допомогою атрибуту style в середині HTML елементу
+          </li>
+          <li>Вбудовані таблиці. Його ми вже розглянули. При цьому способі таблиця стилів вбудовується в заголовок
+            html-сторінки. через тег <kbd>style</kbd></li>
+          <li>Підключення зовнішнього файлу стилів. Це відбувається за допомогою тегу link в заголовку сторінки з
+            атрибутами rel який вказує на тип файлу що підключається і href що вказує на шлях до файлу стилів
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3>
+          Селектори
+        </h3>
+        <ul class="list">
+          <li><kbd>* &#123;...&#125;</kbd>
+            <br>вибір всіх елементів на сторінці (обнулення)
+          </li>
+          <li><kbd>тег &#123;...&#125;</kbd><var>селектор тегів</var>
+            <br>Вибір всіх тегів даного виду на сторінці
+          </li>
+          <li><kbd>#назва &#123;...&#125;</kbd><var>селектор id ‘айді’</var>
+            <br>Вибір єдиного елемента на сторінці в якого id=”назва”
+          </li>
+          <li><kbd>.назва &#123;...&#125;</kbd><var>селектор класів</var>
+            <br>Вибір всіх елементів на сторінці в яких class=”назва”
+          </li>
+          <li><kbd>[атрибут=значення] &#123;...&#125;</kbd><var>селектор атрибутів</var>
+            <br>Вибір всіх елементів на сторінці в яких атрибут=”значення”
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3>Комбінований селектор або селектор відношення</h3>
+        <ul class="list">
+          <li><kbd>div p</kbd>-елементи p , що є нащадками div (знаходяться всередині блоку div).</li>
+          <li><kbd>div,p</kbd>-всі div і всі p елементи.</li>
+          <li><kbd>div,p</kbd>-всі div і всі p елементи.</li>
+          <li><kbd>div,p</kbd>-всі div і всі p елементи.</li>
+          <li><kbd>div>p</kbd>-тільки безпосередні нащадки</li>
+          <li></li>
+          <li><kbd>div ~ p</kbd>всі p на тому ж рівні вкладеності, які йдуть після div</li>
+          <li><kbd>div + p</kbd>перший p на тому ж рівні вкладеності, який йде відразу після div (якщо є)</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3>
+          Блочна модель
+        </h3>
+        <img src="assets/img/css/box_model.png" style="width: 100%" alt="">
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3><kbd>box-sizing: border-box | content-box(default)</kbd></h3>
+        <img src="assets/img/css/box-model.png" style="width: 100%" alt="">
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3>
+          Псевдокласи - це селектори, які визначають стан вже існуючих елементів, який може змінюватися за певних умов.
+        </h3>
+        <ul class="list">
+          <li><kbd>селектор:active &#123;...&#125;</kbd> <br>при активації користувачем елементу (клік на посилання).</li>
+          <li><kbd>селектор:link &#123;...&#125;</kbd> <br>застосовується до невідвідуваних посилань, на які користувач ще не натискав.</li>
+          <li><kbd>селектор:focus &#123;...&#125;</kbd> <br>застосовується до елемента при отриманні ним фокусу (курсор встановлений в полі, і за допомогою клавіатури можна вводити в нього текст )</li>
+          <li><kbd>селектор:hover &#123;...&#125;</kbd> <br>активізується коли курсор миші знаходиться в межах елемента але клацання по ньому не відбувається.</li>
+          <li><kbd>селектор:visited &#123;...&#125;</kbd> <br>застосовується до відвіданих посилань.</li>
+          <li>Псевдокласи що мають відношення до дерева документа</li>
+          <li><kbd>селектор:first | last | nth()-child &#123;...&#125;</kbd><br>застосовується до певного дочірнього елементу селектора який розташований в дереві елементів документа.          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3>
+          Псевдоелементи - це селектори, які визначають область елементів , яка спочатку відсутня в дереві документа. Ця область створюється штучно за допомогою CSS .
+        </h3>
+        <ul class="list">
+          <li><kbd>селектор : after &#123;...&#125;</kbd> <br>застосовується для вставки призначеного контенту після вмісту елемента. Цей псевдоелемент працює спільно зі стильовим властивістю content , яке визначає вміст для вставки.</li>
+          <li><kbd>селектор : before &#123;...&#125;</kbd> <br>аналогічний псевдоелементу : after , але вставляє контент до вмісту елементу.</li>
+          <li><kbd>селектор : first-letter &#123;...&#125;</kbd> <br>визначає стиль першого символу в тексті елемента, до якого додається.</li>
         </ul>
       </div>
     </section>
