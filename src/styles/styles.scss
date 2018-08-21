@@ -75,4 +75,12 @@ section {
   padding: 20px 40px;
   box-shadow: $box-shadow;
   border-radius: $border-radius;
+
+  p {
+    font-size: inherit;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
