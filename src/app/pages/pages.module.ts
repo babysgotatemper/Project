@@ -13,7 +13,8 @@ import { GistComponent } from './gist/gist.component';
     MatButtonModule,
     MatListModule,
     RouterModule.forChild([
-      { path: 'material', component: MaterialComponent}
+      { path: 'material', component: MaterialComponent},
+      { path: 'css', loadChildren: './css/css.module#CssModule'}
     ])
   ],
   declarations: [

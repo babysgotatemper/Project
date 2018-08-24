@@ -7,8 +7,6 @@ import { HtmlComponent } from './pages/html/html.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 import { TemplateComponent } from './pages/template/template.component';
-import { CssComponent } from './pages/css/css.component';
-
 
 @NgModule({
   declarations: [
@@ -16,7 +14,6 @@ import { CssComponent } from './pages/css/css.component';
     HomeComponent,
     HtmlComponent,
     TemplateComponent,
-    CssComponent
   ],
   imports: [
     BrowserModule,
@@ -25,8 +22,7 @@ import { CssComponent } from './pages/css/css.component';
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'html', component: HtmlComponent},
-      {path: 'css', component: CssComponent},
-      {path: 'pages', loadChildren: './pages/pages.module#PagesModule'},
+      {path: 'courses', loadChildren: './pages/pages.module#PagesModule'},
       {path: 'template', component: TemplateComponent},
       {path: '**', redirectTo: ''},
     ])

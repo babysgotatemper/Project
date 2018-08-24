@@ -10,6 +10,11 @@
       <h4>(англ. Cascading Style Sheets) — спеціальна мова, що використовується для опису сторінок, написаних мовами
         розмітки даних (HTML).</h4>
     </div>
+<!--    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>-->
     <img src="assets/img/css/css.gif" alt="">
     <div class="section">
       <blockquote class="blockquote">
@@ -20,91 +25,7 @@
         </code>
       </blockquote>
     </div>
-    <section>
-      <div>
-        <h3>
-          Властивості фону
-        </h3>
-        <ul class="ul">
-          <li>background-color: колір фону елемента</li>
-          <li>background-image: зображення фону елемента</li>
-          <li>background-repeat : повтор фонового зображення (по замовчуванню стоїть значення повтору, можна зробити без
-            повтору, і повтор по осі Х або У)використовується для паттернів
-          </li>
-          <li>background-position: позиція фонового зображення</li>
-          <li>background-attachment: вказує прокручувати фонове зображення разом з текстом чи ні</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h3>Розміри елементів</h3>
-        <ul class="ul">
-          <li>height: висота елемента</li>
-          <li>width: ширина елемента</li>
-        </ul>
-        <ul class="ul">
-          <li>border-style: Стиль всіх рамок елемента</li>
-          <li>border-color: колір рамки</li>
-          <li>border-width: ширина рамки</li>
-          <li>border-(top right left bottom)-властивість: окремі стилі для кожної з сторін</li>
-        </ul>
-        <ul class="ul">
-          <li>padding-(top right left bottom): задає внутрішні відступи від кожної сторони елементу</li>
-          <li>margin-(top right left bottom): задає зовнішні відступи від кожної сторони елементу</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h3>Властивості шрифтів</h3>
-        <ul class="ul">
-          <li>font-size: розмір шрифту</li>
-          <li>font-style: стиль шрифту (normal italic)</li>
-          <li>font-weight: жирність шрифту(lighter, normal, bold, bolder) або (100-900) з кроком 100, 400 відповідає
-            нормальному шрифту, а 700 - напівжирний
-          </li>
-          <li>font-family: задає сімейство шрифту для елемента ("Times New Roman", Georgia, Serif)</li>
-        </ul>
-        <ul class="ul">
-          <li>text-align: (left right center justify) задає спосіб вирівнювання тексту по горизонталі.</li>
-          <li>color: колір тексту</li>
-          <li>letter-spacing: відстань між буквами</li>
-          <li>text-transform: (none, capitalize, uppercase, lowercase)перетворення тексту в заголовні або рядкові
-            літери.
-          </li>
-          <li>text-decoration: (none, underline, overline, line-through)оформлення підкреслення тексту.</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h3>Властивості списків</h3>
-        <ul class="ul">
-          <li>list-style-image: замінює маркер пункту списку на зображення</li>
-          <li>list-style-position: (inside, outside)визначає положення маркера списку.</li>
-          <li>list-style-type: визначає тип маркера пункту списку.</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h3>
-          Універсальні властивості
-        </h3>
-        <ul class="ul">
-          <li>background: (background-attachment background-color background-image background-position background-repeat
-            inherit)
-          </li>
-          <li>border: (border-width border-style border-color inherit)</li>
-          <li>margin: (top right botton left), (top-bottom left-right), (auto)</li>
-          <li>padding: (top right botton left), (top-bottom left-right)</li>
-          <li>text-shadow: (зсувХ зсувY розмиття колір) додає тінь до тексту.</li>
-          <li>box-shadow: (зсувХ зсувY розмиття колір) додає тінь до блоку.</li>
-          <li>font: weight size/line-height family</li>
-        </ul>
-      </div>
-    </section>
+    <router-outlet></router-outlet>
     <section>
       <div>
         <h3>
