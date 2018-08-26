@@ -1,0 +1,51 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #0000FF;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+  &:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+  }
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: anim1;
+  animation-duration: 4s;
+}
+
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes anim1{
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+
+
+
+
+
+
+

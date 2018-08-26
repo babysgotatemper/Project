@@ -1,0 +1,79 @@
+
+<section>
+  <div>
+    <h3>
+      Нестандартні шрифти і їх підключення
+    </h3>
+    <h4>
+      Родові сімейства шрифтів
+    </h4>
+    <ul class="list">
+      <li><kbd style="font-family: serif">serif</kbd> - шрифти із зарубками на кінцях;</li>
+      <li><kbd style="font-family: sans-serif">sans-serif</kbd> - шрифти без зарубок;</li>
+      <li><kbd style="font-family: cursive">cursive</kbd> - шрифти курсиву;</li>
+      <li><kbd style="font-family: fantasy">fantasy</kbd> - декоративні шрифти;</li>
+      <li><kbd style="font-family: monospace">monospace</kbd> - моно шрифт (з буквами однакової ширини).</li>
+    </ul>
+    <br>
+    <h4>
+      Безпечні шрифти
+    </h4>
+    <ul class="list">
+      <li>Arial</li>
+      <li>Arial Black</li>
+      <li>Comic Sans MS</li>
+      <li>Courier New</li>
+      <li>Georgia</li>
+      <li>Impact</li>
+      <li>Times New Roman</li>
+      <li>Trebuchet MS</li>
+      <li>Verdana</li>
+    </ul>
+    <br>
+    <h4>
+      Розмір шрифту
+    </h4>
+    <p>
+      Що таке «розмір шрифту»? Це зовсім не «розмір самої великої літери в ньому», як можна було б подумати.
+      <br><br>
+      Розмір шрифту - це деяка «умовна одиниця», яка вбудована в шрифт.
+      <br><br>
+      Вона зазвичай трохи більше, ніж відстань від верху самої великої літери до низу найменшою. Тобто, передбачається, що в цю висоту поміщається будь-яка буква або їх поєднання. Але при цьому «хвости» букв, таких як р, g можуть заходити за це значення, тобто вилазити знизу. Тому зазвичай висоту рядка роблять трохи більше, ніж розмір шрифту.
+    </p>
+    <img src="assets/img/css/line-h.png" alt="">
+    <br>
+    <h4>
+      Формати контейнерів шрифтів:
+    </h4>
+    <ul class="list">
+      <li>Використовуйте WOFF 2.0 в тих браузерах, які його підтримують.</li>
+      <li><strong>Додайте WOFF для більшості браузерів.</strong></li>
+      <li>Застосовуйте TTF в застарілих браузерах Android (для версій до 4.4).</li>
+      <li>Додайте EOT для підтримки застарілих версій IE (до IE9).</li>
+      <li>Теоретично, існує ще один формат контейнера шрифтів - SVG .</li>
+    </ul>
+    <br>
+    <h4>
+      CSS-правило @ font-face
+    </h4>
+    <pre>
+          @ font-face  &#123;
+            font-family :  '...' ;
+            font-style :  ...;
+            font-weight :  .... ;
+            src :  local ( '...' ),
+            url ( '/fonts/….' )  format ( '...' ),
+          &#125;
+        </pre>
+    <br>
+    <h4>
+      Генератори шрифтів
+    </h4>
+    <ul class="list">
+      <li><a href="https://www.fontsquirrel.com/" target="_blank">https://www.fontsquirrel.com/</a></li>
+      <li><a href="https://onlinefontconverter.com/" target="_blank">https://onlinefontconverter.com/</a></li>
+      <li><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
+      <li><a href="http://fontello.com/" target="_blank">http://fontello.com/</a></li>
+    </ul>
+  </div>
+</section>

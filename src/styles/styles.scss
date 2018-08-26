@@ -3,8 +3,9 @@
 @import "_reset.css";
 @import "material-kit";
 @import "tags";
+@import "material";
 
-$radius: 6px;
+$radius: 4px;
 $box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
 
@@ -26,7 +27,7 @@ body {
 }
 
 .tag {
-  background-color: $bg-primary;
+  background-color: red;
   color: #fff;
   border-radius: $radius;
   font-family: "Courier New";
@@ -36,7 +37,7 @@ body {
   &:before,
   &:after {
     padding: 0 5px;
-    color: $bg-dark;
+    color: black;
   }
   &:before {
     content: '<';
@@ -59,7 +60,7 @@ body {
   padding-left: 20px;
 
   li {
-    margin: 7px 0;
+    margin: 10px 0;
   }
 }
 
@@ -74,7 +75,7 @@ section {
   margin: 20px auto;
   padding: 20px 40px;
   box-shadow: $box-shadow;
-  border-radius: $border-radius;
+  border-radius: $radius;
 
   p {
     font-size: inherit;
@@ -82,5 +83,27 @@ section {
 
   img {
     max-width: 100%;
+  }
+}
+
+.pageNav {
+  position: sticky;
+  top: 70px;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &-link {
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid black;
+    color: black;
+    padding: 3px 5px;
+
+    &--active {
+      background-color: black;
+      color: white;
+    }
   }
 }
