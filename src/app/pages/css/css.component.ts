@@ -16,6 +16,10 @@ export class CssComponent implements OnInit {
       'title': 'Властивості',
     },
     {
+      'link': 'reset',
+      'title': 'Онулення стилів',
+    },
+    {
       'link': 'box-model',
       'title': 'Блочна модель',
     }, {
@@ -49,25 +53,25 @@ export class CssComponent implements OnInit {
       'link': 'css3-animations',
       'title': 'CSS3 animations',
     },
-/*    {
+    {
       'link': 'html5-css3',
       'title': 'HTML5/CSS3',
-    }, {
+    },
+    {
       'link': 'animations',
       'title': 'CSS3 анімації',
-    }, {
-      'link': 'reset',
-      'title': 'Онулення стилів',
-    }, {
-      'link': 'prefixes',
+    },
+    {
+      'link': 'vendor',
       'title': 'Вендорні префікси',
-    }, {
-      'link': 'adaptation',
-      'title': 'Резинова і адаптивна верстка',
-    }, {
-      'link': 'css-pro',
-      'title': 'CSS Pro',
-    }*/
+    },
+    /*{
+          'link': 'adaptation',
+          'title': 'Резинова і адаптивна верстка',
+        }, {
+          'link': 'css-pro',
+          'title': 'CSS Pro',
+        }*/
   ];
 
   constructor() { }

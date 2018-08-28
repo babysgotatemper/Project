@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared/shared.module';
 import { HomeComponent } from './pages/home/home.component';
-import { HtmlComponent } from './pages/html/html.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 import { TemplateComponent } from './pages/template/template.component';
@@ -12,7 +11,6 @@ import { TemplateComponent } from './pages/template/template.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    HtmlComponent,
     TemplateComponent,
   ],
   imports: [
@@ -21,7 +19,6 @@ import { TemplateComponent } from './pages/template/template.component';
     SharedModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: 'html', component: HtmlComponent},
       {path: 'courses', loadChildren: './pages/pages.module#PagesModule'},
       {path: 'template', component: TemplateComponent},
       {path: '**', redirectTo: ''},

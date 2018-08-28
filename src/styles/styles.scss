@@ -51,6 +51,16 @@ body {
   }
 }
 
+.link {
+  color: darkred;
+  transition: all 5ms;
+
+  &:hover {
+    color: white;
+    background: darkred;
+  }
+}
+
 .ol {
   list-style-type: decimal;
 }

@@ -15,6 +15,8 @@ import { FlexboxComponent } from './components/flexbox/flexbox.component';
 import { Html5Css3Component } from './components/html5-css3/html5-css3.component';
 import {MatTabsModule} from '@angular/material';
 import { CssAnimationsComponent } from './components/css-animations/css-animations.component';
+import { ResetComponent } from './components/reset/reset.component';
+import { VendorComponent } from './components/vendor/vendor.component';
 
 @NgModule({
   imports: [
@@ -35,7 +37,9 @@ import { CssAnimationsComponent } from './components/css-animations/css-animatio
           {path: 'position', component: PositionComponent},
           {path: 'flexbox', component: FlexboxComponent},
           {path: 'html5-css3', component: Html5Css3Component},
-          {path: 'css3-animations', component: CssAnimationsComponent},
+          {path: 'animations', component: CssAnimationsComponent},
+          {path: 'reset', component: ResetComponent},
+          {path: 'vendor', component: VendorComponent},
         ],
       },
     ]),
@@ -54,6 +58,8 @@ import { CssAnimationsComponent } from './components/css-animations/css-animatio
     FlexboxComponent,
     Html5Css3Component,
     CssAnimationsComponent,
+    ResetComponent,
+    VendorComponent,
   ]
 })
 export class CssModule { }

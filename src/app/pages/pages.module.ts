@@ -23,7 +23,8 @@ import { GistComponent } from './gist/gist.component';
     MatListModule,
     RouterModule.forChild([
       { path: 'material', component: MaterialComponent},
-      { path: 'css', loadChildren: './css/css.module#CssModule'}
+      { path: 'css', loadChildren: './css/css.module#CssModule'},
+      { path: 'html', loadChildren: './html/html.module#HtmlModule'},
     ])
   ],
   declarations: [
