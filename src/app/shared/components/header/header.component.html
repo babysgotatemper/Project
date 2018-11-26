@@ -1,8 +1,7 @@
 <nav class="navbar navbar-color-on-scroll bg-dark fixed-top navbar-expand-lg"  color-on-scroll="100">
   <div class="container">
     <div class="navbar-translate">
-      <a class="navbar-brand" target="_blank"
-         href="https://demos.creative-tim.com/material-kit/index.html">
+      <a class="navbar-brand" routerLink="/">
         RS
       </a>
 
@@ -16,30 +15,14 @@
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }">
-          <a class="nav-link"
-             routerLink="/">
-            Home
-          </a>
-        </li>
-        <li class="nav-item"
-            routerLinkActive="active">
-          <a class="nav-link"
-             routerLinkActive="active"
-             routerLink="/template">
-            Template
-          </a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             courses
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" routerLink="/courses">Main</a>
-            <a class="dropdown-item" routerLink="/courses/html">html</a>
-            <a class="dropdown-item" routerLink="/courses/css">css</a>
+            <!--<a class="dropdown-item" routerLink="/courses">Main</a>-->
+            <a class="dropdown-item" routerLink="/courses/html">HTML</a>
+            <a class="dropdown-item" routerLink="/courses/css">CSS</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item"
                target="_blank"

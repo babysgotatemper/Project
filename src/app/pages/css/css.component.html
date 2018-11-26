@@ -1,26 +1,6 @@
-<div class="page-header header-filter"
-     data-parallax="true"
-     style="background-image: url('assets/img/IOT/css3.jpg')">
-</div>
-
-<div class="main main-raised">
-  <div class="container">
-    <div class="section text-center">
-      <h2 class="title">CSS3</h2>
-      <h4>(англ. Cascading Style Sheets) — спеціальна мова, що використовується для опису сторінок, написаних мовами
-        розмітки даних (HTML).</h4>
-    </div>
-    <img src="assets/img/css/css.gif" alt="">
-    <div class="section">
-      <blockquote class="blockquote">
-        <code>
-          селектор &#x7b;<br>
-          властивість: значення;<br>
-          &#x7d;
-        </code>
-      </blockquote>
-    </div>
-    <nav class="pageNav">
+<mat-drawer-container class="example-container" hasBackdrop="true">
+  <mat-drawer #drawer mode="over" opened class="pageNav">
+    <nav>
       <a *ngFor="let item of pages"
          class="pageNav-link"
          routerLinkActive="pageNav-link--active"
@@ -28,7 +8,39 @@
         {{item.title}}
       </a>
     </nav>
-    <router-outlet></router-outlet>
-    <br>
-  </div>
-</div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <button class="pageNav-toggle btn btn-primary btn-fab btn-fab-mini btn-round"
+            (click)="drawer.toggle()">
+      <i class="material-icons">
+        compare_arrows
+      </i>
+    </button>
+    <div class="page-header header-filter"
+         data-parallax="true"
+         style="background-image: url('assets/img/IOT/css3.jpg')">
+    </div>
+
+    <div class="main main-raised">
+      <div class="container">
+        <div class="section text-center">
+          <h2 class="title">CSS3</h2>
+          <h4>(англ. Cascading Style Sheets) — спеціальна мова, що використовується для опису сторінок, написаних мовами
+            розмітки даних (HTML).</h4>
+        </div>
+        <img src="assets/img/css/css.gif" alt="">
+        <div class="section">
+          <blockquote class="blockquote">
+            <code>
+              селектор &#x7b;<br>
+              властивість: значення;<br>
+              &#x7d;
+            </code>
+          </blockquote>
+        </div>
+        <router-outlet></router-outlet>
+        <br>
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

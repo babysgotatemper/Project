@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import {HtmlComponent} from './html.component';
 import { RouterModule} from '@angular/router';
 import { DomComponent } from './components/dom/dom.component';
-import {MatTabsModule} from '@angular/material';
+import {MatSidenavModule, MatTabsModule} from '@angular/material';
 import { TagsComponent } from './components/tags/tags.component';
 
 @NgModule({
   imports: [
     CommonModule,
     MatTabsModule,
+    MatSidenavModule,
     RouterModule.forChild([
       {
         path: '', component: HtmlComponent, children: [

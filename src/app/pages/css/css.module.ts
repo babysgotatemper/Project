@@ -13,7 +13,7 @@ import { FontsComponent } from './components/fonts/fonts.component';
 import { PositionComponent } from './components/position/position.component';
 import { FlexboxComponent } from './components/flexbox/flexbox.component';
 import { Html5Css3Component } from './components/html5-css3/html5-css3.component';
-import {MatTabsModule} from '@angular/material';
+import {MatSidenavModule, MatTabsModule} from '@angular/material';
 import { CssAnimationsComponent } from './components/css-animations/css-animations.component';
 import { ResetComponent } from './components/reset/reset.component';
 import { VendorComponent } from './components/vendor/vendor.component';
@@ -22,6 +22,7 @@ import { VendorComponent } from './components/vendor/vendor.component';
   imports: [
     CommonModule,
     MatTabsModule,
+    MatSidenavModule,
     RouterModule.forChild([
       {
         path: '', component: CssComponent, children: [

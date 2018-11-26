@@ -54,14 +54,6 @@ export class CssComponent implements OnInit {
       'title': 'CSS3 animations',
     },
     {
-      'link': 'html5-css3',
-      'title': 'HTML5/CSS3',
-    },
-    {
-      'link': 'animations',
-      'title': 'CSS3 анімації',
-    },
-    {
       'link': 'vendor',
       'title': 'Вендорні префікси',
     },

@@ -20,6 +20,7 @@ import { GistComponent } from './gist/gist.component';
     MatCardModule,
     MatCommonModule,
     MatButtonModule,
+    MatSidenavModule,
     MatListModule,
     RouterModule.forChild([
       { path: 'material', component: MaterialComponent},

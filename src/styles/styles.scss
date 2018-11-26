@@ -4,6 +4,7 @@
 @import "material-kit";
 @import "tags";
 @import "material";
+@import "kit-override";
 
 $radius: 4px;
 $box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -97,23 +98,48 @@ section {
 }
 
 .pageNav {
-  position: sticky;
-  top: 70px;
-  z-index: 1000;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 160px;
+  padding: 80px 5px 10px;
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  box-shadow: $box-shadow;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &-toggle {
+    position: fixed !important;
+    z-index: 1050;
+    bottom: 5px;
+    left: 5px;
+  }
+
   &-link {
+    color: black;
     margin: 5px;
     display: inline-block;
     border: 1px solid black;
-    color: black;
     padding: 3px 5px;
+    border-radius: $radius;
+
+    &:hover {
+      box-shadow: 0 0 5px black;
+      color: black;
+    }
 
     &--active {
       background-color: black;
-      color: white;
+      color: white !important;
+
+      &:hover {
+        color: inherit;
+      }
     }
+
   }
 }
