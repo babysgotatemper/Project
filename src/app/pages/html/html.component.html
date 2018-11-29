@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container" hasBackdrop="true">
-  <mat-drawer #drawer mode="over" opened class="pageNav">
+  <mat-drawer #drawer mode="over" class="pageNav">
     <nav>
       <a *ngFor="let item of pages"
          class="pageNav-link"
@@ -21,17 +21,17 @@
      style="background-image: url('assets/img/IOT/HTML5MainM.jpg')">
     </div>
 
-  <div class="main main-raised">
-  <div class="container">
-    <div class="section text-center">
-      <h2 class="title">HTML</h2>
-      <h4>
-        (англ. HyperText Markup Language) стандартна мова розмітки веб-сторінок в Інтернеті
-      </h4>
+    <div class="main main-raised">
+      <div class="container">
+        <div class="section text-center">
+          <h2 class="title">HTML</h2>
+          <h4>
+            (англ. HyperText Markup Language) стандартна мова розмітки веб-сторінок в Інтернеті
+          </h4>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+      <br><br>
     </div>
-    <router-outlet></router-outlet>
-  </div>
-  <br><br>
-</div>
   </mat-drawer-content>
 </mat-drawer-container>

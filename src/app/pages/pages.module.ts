@@ -1,36 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialComponent } from './material/material.component';
-import {RouterModule} from '@angular/router';
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatCommonModule,
-  MatListModule,
-  MatSidenavModule, MatTab, MatTabContent,
-  MatTabGroup, MatTabLabel, MatTabLink, MatTabNav,
-  MatTabsModule
-} from '@angular/material';
-import { GistComponent } from './gist/gist.component';
+import { RouterModule } from '@angular/router';
+import { CoursesComponent } from './courses/courses.component';
+import { CustomMaterialModule } from '../shared/custom-material/custom-material.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatSidenavModule,
-    MatCardModule,
-    MatCommonModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
+    CustomMaterialModule,
     RouterModule.forChild([
-      { path: 'material', component: MaterialComponent},
+      { path: '', component: CoursesComponent},
       { path: 'css', loadChildren: './css/css.module#CssModule'},
       { path: 'html', loadChildren: './html/html.module#HtmlModule'},
+      { path: 'js', loadChildren: './js/js.module#JsModule'},
     ])
   ],
   declarations: [
-    MaterialComponent,
-    GistComponent
+    CoursesComponent,
   ]
 })
 export class PagesModule { }

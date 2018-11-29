@@ -16,8 +16,11 @@
   width: 100px;
   height: 100px;
   background-color: red;
-  animation-name: anim1;
-  animation-duration: 4s;
+
+  &:hover {
+    animation-name: anim1;
+    animation-duration: 4s;
+  }
 }
 
 
@@ -25,8 +28,7 @@
   width: 100px;
   height: 100px;
   background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
+  animation: anim2 5s infinite;
 }
 
 @keyframes anim1{
@@ -34,11 +36,12 @@
   to {background-color: yellow;}
 }
 
-@keyframes example {
+@keyframes anim2 {
   0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
+  15%  {background-color: yellow;}
+  40%  {background-color: blue;}
+  65% {background-color: green;}
+  90% {background-color: red;}
 }
 
 

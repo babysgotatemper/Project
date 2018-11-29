@@ -17,12 +17,14 @@ import {MatSidenavModule, MatTabsModule} from '@angular/material';
 import { CssAnimationsComponent } from './components/css-animations/css-animations.component';
 import { ResetComponent } from './components/reset/reset.component';
 import { VendorComponent } from './components/vendor/vendor.component';
+import {CustomMaterialModule} from '../../shared/custom-material/custom-material.module';
+import { CssProComponent } from './components/css-pro/css-pro.component';
+import { AdaptationComponent } from './components/adaptation/adaptation.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatTabsModule,
-    MatSidenavModule,
+    CustomMaterialModule,
     RouterModule.forChild([
       {
         path: '', component: CssComponent, children: [
@@ -41,6 +43,8 @@ import { VendorComponent } from './components/vendor/vendor.component';
           {path: 'animations', component: CssAnimationsComponent},
           {path: 'reset', component: ResetComponent},
           {path: 'vendor', component: VendorComponent},
+          {path: 'css-pro', component: CssProComponent},
+          {path: 'adaptation', component: AdaptationComponent},
         ],
       },
     ]),
@@ -61,6 +65,8 @@ import { VendorComponent } from './components/vendor/vendor.component';
     CssAnimationsComponent,
     ResetComponent,
     VendorComponent,
+    CssProComponent,
+    AdaptationComponent,
   ]
 })
 export class CssModule { }

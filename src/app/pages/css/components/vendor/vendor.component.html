@@ -12,5 +12,35 @@
       <li><kbd>-ms-</kbd> - Internet Explorer 8 || Trident</li>
       <li><kbd>-webkit-</kbd> - Apple Safari 3+, Google Chrome і ін.</li>
     </ul>
+
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>/* Cross-browser CSS3 linear-gradient */</h3>
+    <blockquote class="blockquote">
+      <code>
+        .linear-gradient &#x7b;
+        <div style="padding-left: 20px; padding-top: 20px; padding-bottom: 20px;">
+          /* Gecko browser (Firefox) */<br>
+          background-image: -moz-linear-gradient(top, #D7D 0%, #068 100%);<br>
+          <br>
+          /* Opera */
+          background-image: -o-linear-gradient(top, #D7D 0%, #068 100%);<br>
+          <br>
+          /* older Webkit syntax */<br>
+          background-image: -webkit-gradient(linear, left top, left bottom,<br>
+          color-stop(0, #D7D), color-stop(1, #068));<br>
+          <br>
+          /* Webkit (Safari, Chrome, iOS, Android) */<br>
+          background-image: -webkit-linear-gradient(top, #D7D 0%, #068 100%);<br>
+          <br>
+          /* W3C */<br>
+          background-image: linear-gradient(to bottom, #D7D 0%, #068 100%);<br>
+        </div>
+        &#x7d;
+      </code>
+    </blockquote>
   </div>
 </section>

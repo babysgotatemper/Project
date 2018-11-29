@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 import { TemplateComponent } from './pages/template/template.component';
+import {CustomMaterialModule} from './shared/custom-material/custom-material.module';
 
 @NgModule({
   declarations: [
@@ -19,9 +20,8 @@ import { TemplateComponent } from './pages/template/template.component';
     SharedModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
+      {path: 'style', component: TemplateComponent},
       {path: 'courses', loadChildren: './pages/pages.module#PagesModule'},
-      {path: 'template', component: TemplateComponent},
-      {path: '**', redirectTo: ''},
     ])
   ],
   providers: [],

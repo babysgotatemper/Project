@@ -1,78 +1,77 @@
 <section>
   <div>
     <h3>
-      CSS3 animations
+      Transitions Transform
     </h3>
-    <mat-tab-group>
-      <mat-tab label="transitions transform">
-        <h4>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions" target="_blank">
-            <kbd>transition</kbd>
-          </a> /
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">
-            <kbd>transform</kbd>
-          </a>
-        </h4>
-        <blockquote class="blockquote">
-          <code>
-            .box &#x7b;<br>
-            &nbsp;width: 100px;<br>
-            &nbsp;height: 100px;<br>
-            &nbsp;background-color: #0000FF;<br>
-            &nbsp;transition: width 2s, height 2s, background-color 2s, transform 2s;<br>
-            &#x7d;
-            <br>
-            .box:hover &#x7b;<br>
-            &nbsp;background-color: #FFCCCC; <br>
-            &nbsp;width: 200px; <br>
-            &nbsp;height: 200px; <br>
-            &nbsp;transform: rotate(180deg);<br>
-            &#x7d;
-          </code>
-        </blockquote>
-        <div class="box"></div>
-      </mat-tab>
-      <mat-tab label="Keyframes">
-        <blockquote class="blockquote">
-          <code>
-            .box2 &#x7b;<br>
-            &nbsp;width: 100px;<br>
-            &nbsp;height: 100px;<br>
-            &nbsp;background-color: red;<br>
-            &nbsp;animation-name: anim1;<br>
-            &nbsp;animation-duration: 4s;<br>
-            &#x7d;
-            <br>
-            @keyframes anim1 &#x7b;<br>
-            &nbsp;from &#x7b;background-color: red;&#x7d; <br>
-            &nbsp;to &#x7b;background-color: yellow;&#x7d; <br>
-            &#x7d;
-          </code>
-        </blockquote>
-        <div class="box2"></div>
-      </mat-tab>
-      <mat-tab label="Keyframes pro">
-        <blockquote class="blockquote">
-          <code>
-            .box3 &#x7b;<br>
-            &nbsp;width: 100px;<br>
-            &nbsp;height: 100px;<br>
-            &nbsp;background-color: red;<br>
-            &nbsp;animation-name: example;<br>
-            &nbsp;animation-duration: 4s;<br>
-            &#x7d;
-            <br>
-            @keyframes example &#x7b;<br>
-            &nbsp;0%&#x7b;background-color: red;&#x7d; <br>
-            &nbsp;25% &#x7b;background-color: yellow;&#x7d; <br>
-            &nbsp;50% &#x7b;background-color: blue;&#x7d; <br>
-            &nbsp;75% &#x7b;background-color: green;&#x7d; <br>
-            &#x7d;
-          </code>
-        </blockquote>
-        <div class="box3"></div>
-      </mat-tab>
-    </mat-tab-group>
+    <blockquote class="blockquote">
+      <code>
+        .box &#x7b;<br>
+        &nbsp;width: 100px;<br>
+        &nbsp;height: 100px;<br>
+        &nbsp;background-color: #0000FF;<br>
+        &nbsp;transition: width 2s, height 2s, background-color 2s, transform 2s;<br>
+        &#x7d;
+        <br>
+        .box:hover &#x7b;<br>
+        &nbsp;background-color: #FFCCCC; <br>
+        &nbsp;width: 200px; <br>
+        &nbsp;height: 200px; <br>
+        &nbsp;transform: rotate(180deg);<br>
+        &#x7d;
+      </code>
+    </blockquote>
+    <div class="box"></div>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>Keyframes</h3>
+    <blockquote class="blockquote">
+      <code>
+        .box2 &#x7b;<br>
+        &nbsp;width: 100px;<br>
+        &nbsp;height: 100px;<br>
+        &nbsp;background-color: red;<br>
+        &#x7d;
+        <br>
+        .box2:hover &#x7b;<br>
+        &nbsp;animation-name: anim1;<br>
+        &nbsp;animation-duration: 4s;<br>
+        &#x7d;
+        <br>
+        @keyframes anim1 &#x7b;<br>
+        &nbsp;from &#x7b;background-color: red;&#x7d; <br>
+        &nbsp;to &#x7b;background-color: yellow;&#x7d; <br>
+        &#x7d;
+      </code>
+    </blockquote>
+    <div class="box2"></div>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>Keyframes pro</h3>
+    <blockquote class="blockquote">
+      <code>
+        .box3 &#x7b;<br>
+        &nbsp;width: 100px;<br>
+        &nbsp;height: 100px;<br>
+        &nbsp;background-color: red;<br>
+        animation: anim2 5s infinite;<br>
+        &#x7d;
+        <br>
+        @keyframes anim2 &#x7b;<br>
+        &nbsp;0%&#x7b;background-color: red;&#x7d; <br>
+        &nbsp;15% &#x7b;background-color: yellow;&#x7d; <br>
+        &nbsp;40% &#x7b;background-color: blue;&#x7d; <br>
+        &nbsp;65% &#x7b;background-color: green;&#x7d; <br>
+        &nbsp;90% &#x7b;background-color: red;&#x7d; <br>
+        &#x7d;
+      </code>
+    </blockquote>
+    <div class="box3"></div>
   </div>
 </section>
 

@@ -50,20 +50,20 @@ export class CssComponent implements OnInit {
       'title': 'HTML5/CSS3',
     },
     {
-      'link': 'css3-animations',
+      'link': 'animations',
       'title': 'CSS3 animations',
     },
     {
       'link': 'vendor',
-      'title': 'Вендорні префікси',
+      'title': 'Vendor prefix',
     },
-    /*{
-          'link': 'adaptation',
-          'title': 'Резинова і адаптивна верстка',
-        }, {
-          'link': 'css-pro',
-          'title': 'CSS Pro',
-        }*/
+    {
+      'link': 'adaptation',
+      'title': 'Адаптація',
+    }, {
+      'link': 'css-pro',
+      'title': 'CSS-pro',
+    }
   ];
 
   constructor() { }
