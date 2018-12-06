@@ -1,0 +1,17 @@
+<div class="code" *ngIf="!isTagInline(name, inline)">
+  <span class="tag">
+    {{name}}
+    <span class="attr" *ngFor="let i of attr">{{i}}</span>
+  </span>
+  <ng-content></ng-content>
+  <span class="tag">
+    /{{name}}
+  </span>
+</div>
+
+<div class="code tag" *ngIf="isTagInline(name, inline)">
+  {{name}}
+  <span class="attr" *ngFor="let i of attr">
+    {{i}}
+  </span>
+</div>

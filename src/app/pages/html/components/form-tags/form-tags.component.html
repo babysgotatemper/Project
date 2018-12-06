@@ -1,0 +1,194 @@
+<section>
+  <div>
+    <h3>Теги для відправки форм (для вводу)</h3>
+    <h4>Для передачі користувацьких даних на сервер в HTML існують форми.
+      З їх допомогою реалізовують все: від листування користувачів до форумів і повноцінних веб-додатків.
+      Форма складається з елемента
+      <tag name="form" inline="true"></tag>
+      , усередині якого розташовується будь-який вміст (крім інших форм), що включає поля введення, кнопки, текстові
+      поля, випадаючі списки і т.д.
+    </h4>
+    <mat-card>
+      <form action="">
+        <fieldset>
+          <legend>Registration form</legend>
+
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Your Name" value="John Snow">
+          </mat-form-field>
+          <br>
+          <mat-radio-group>
+            <mat-radio-button value="1">Male</mat-radio-button>
+            <br>
+            <mat-radio-button value="2">Female</mat-radio-button>
+          </mat-radio-group>
+          <br>
+          <mat-form-field class="example-full-width">
+            <input matInput type="email" placeholder="Your e-mail" value="j.snow@mail.com">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width">
+            <input matInput type="password" placeholder="Your password" value="9379992">
+          </mat-form-field>
+          <br>
+          <input type="reset">
+          <input type="submit">
+        </fieldset>
+      </form>
+    </mat-card>
+  </div>
+</section>
+<section>
+  <div>
+    <h3>
+      Функціональність форми визначається рядом атрибутів
+    </h3>
+    <ul class="list">
+      <li>action - адреса програми або документа, який обробляє дані форми.</li>
+      <li>name Ім'я форми, її ідентифікатор</li>
+      <li>autocomplete Включає автозаповнення полів форми.</li>
+    </ul>
+    <tag name="form" [attr]="['action', 'name', 'autocomplete']">...</tag>
+  </div>
+</section>
+<section>
+  <div>
+    <h3>Input tag</h3>
+    <h4>Найбільш використовуваним елементом форм є <tag name="input"></tag></h4>
+    <p>З його допомогою створюються поля для введення тексту, паролів і вибору файлів, а також кнопки, прапорці та перемикачі. </p>
+    <p>У HTML 5 він ще і пристосований для введення всіляких дат, числових значень, телефонів, адрес і навіть вибору кольору. Все це різноманіття визначається атрибутом type</p>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>Input tag</h3>
+    <p><tag name="input" [attr]="['type']"></tag></p>
+    <ul class="list">
+      <li class="list-title">Атрибут type встановлює тип тегу</li>
+      <li>
+        <input type="text">
+        <p>"text" - значення по замовчуванню. Елемент призначений для введення текстового рядка.</p>
+      </li>
+      <li>
+        <input type="button" value="button">
+        <p>"button" - кнопка, дія якої не визначено, value це назва кнопки.</p>
+      </li>
+      <li>
+        <form action="">
+          <input type="text">
+          <input type="reset">
+        </form>
+        <p>"reset" - кнопка очищення форми.</p>
+      </li>
+      <li>
+        <form action="">
+          <input type="text" value="lorem ipsum">
+          <input type="submit">
+        </form>
+        <p>"submit" - кнопка відправки даних на сервер.</p>
+      </li>
+      <li>
+        <input type="checkbox">
+        <p>"checkbox" - «вкл / викл». елемент містить логічний атрибут checked = "checked".</p>
+      </li>
+      <li>
+        <input type="radio" name="radio"> &nbsp;
+        <input type="radio" name="radio">
+        <p>"radio" - перемикач. В формі повинно бути кілька елементів з однаковим атрибутом name="radioGroup_name" , при кліку активовуватись буде тільки один.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>Textarea tag</h3>
+    <p><tag name="textarea">lorem ipsum</tag></p>
+    <textarea name="" cols="30" rows="5">
+
+    </textarea>
+    <ul class="list">
+      <li>
+        <tag name="input"></tag>
+        не дозволяє вводити багаторядковий текст. Для цих цілей існує спеціальний тег <tag name="textare" [attr]="['name']"></tag>, ім'я якого також задається атрибутом name"".
+      </li>
+      <li>
+        <tag name="textarea" [attr]="['cols', 'rows']"></tag>
+        Атрибути rows і  cols позначають число видимих ​​рядків і символів в рядку відповідно.
+      </li>
+      <li>
+        Як і в  <tag name="input"></tag> , максимальна довжина значення може бути задана атрибутом maxlength="".
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>
+      Select tag
+    </h3>
+    <p>
+      <tag name="select">
+        <tag name="option" [attr]="['value']">...</tag>
+        <tag name="option" [attr]="['value']">...</tag>
+        <tag name="option" [attr]="['value']">...</tag>
+      </tag>
+    </p>
+    <p>
+      <select>
+        <option value="">option item 1</option>
+        <option value="">option item 2</option>
+        <option value="">option item 3</option>
+      </select>
+    </p>
+    <ul class="list">
+      <li>
+        Для організації випадаючих списків використовують структуру, що складається з елемента "select" , усередині якого розміщуються дочірні "option" , що представляють варіанти вибору.
+      </li>
+      <li>
+        Передане на сервер ім'я поля вказується в атрибуті name елемента "select" , а його значення - в ​​атрибуті value елемента "option" .
+      </li>
+      <li>
+        Щоб вказати варіант за замовчуванням застосовується інший логічний атрибут - selected="selected" .
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>
+      Label tag
+    </h3>
+    <p>
+      <tag name="label" [attr]="['for']"></tag>
+      <br>
+      <tag name="input" [attr]="['id']"></tag>
+    </p>
+    <ul class="list">
+      <li>
+        Ще одним елементом, який прив'язується до інших, є "label".
+        Його значення не відправляється на сервер.
+      </li>
+      <li>В атрибуті for вказується ім’я поля введення для прив’язки.</li>
+      <li>
+        Якщо "label" пов'язаний з полем <span class="code tag">input type = "checkbox"</span>, то прапорець буде змінювати своє значення не тільки при натисканні по ньому, але і з цього "label" .
+      </li>
+    </ul>
+    <p>
+      Tе ж саме буде якщо не вказувати атрибут for і помістити тег input у відповідне йому поле label
+      <br>
+      <tag name="label">
+        <tag name="input"></tag>
+      </tag>
+      <br>
+      <label>
+        Label for input
+        <input type="text">
+      </label>
+    </p>
+  </div>
+</section>

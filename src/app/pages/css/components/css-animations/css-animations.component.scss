@@ -13,9 +13,16 @@
 }
 
 .box2 {
+  display: inline-block;
+  margin-right: 10px;
   width: 100px;
   height: 100px;
   background-color: red;
+
+  &.new:hover {
+    animation-name: anim1;
+    animation-duration: 2s;
+  }
 
   &:hover {
     animation-name: anim1;

@@ -1,0 +1,94 @@
+<mat-drawer-container class="example-container" hasBackdrop="true">
+  <!--  <mat-drawer #drawer mode="over" class="pageNav">
+      <nav>
+        <a *ngFor="let item of pages"
+           class="pageNav-link"
+           routerLinkActive="pageNav-link&#45;&#45;active"
+           [routerLink]="item.link">
+          {{item.title}}
+        </a>
+      </nav>
+    </mat-drawer>-->
+  <mat-drawer-content>
+    <!--    <button class="pageNav-toggle btn btn-primary btn-fab btn-fab-mini btn-round"
+                (click)="drawer.toggle()">
+          <i class="material-icons">
+            compare_arrows
+          </i>
+        </button>-->
+    <div class="page-header header-filter"
+         data-parallax="true"
+         style="background-image: url('assets/img/git.jpg')">
+    </div>
+
+    <div class="main main-raised">
+      <div class="container">
+        <div class="section text-center">
+          <h2 class="title">GIT</h2>
+          <h3>Розподілена система керування версіями файлів та спільної роботи</h3>
+          <h4>Проект створив Лінус Торвальдс для управління розробкою ядра Linux, а сьогодні підтримується Джуніо Хамано (англ. Junio C. Hamano). Git є однією з найефективніших, надійних і високопродуктивних систем керування версіями, що надає гнучкі засоби нелінійної розробки, що базуються на відгалуженні і злитті гілок. Для забезпечення цілісності історії та стійкості до змін заднім числом використовуються криптографічні методи, також можлива прив'язка цифрових підписів розробників до тегів і комітів.</h4>
+        </div>
+        <section>
+          <div>
+            <h3>Налаштування локального репозиторію</h3>
+            <ul class="list">
+              <li class="list-title"><a href="https://githowto.com/" target="_blank">https://githowto.com/</a> інформація по системі</li>
+              <li>
+                <span class="code">$ git config --global --list</span> потрібно налаштувати username i email ($ git config --global user.name `ім’я`, $git config --global user.email "your_email@whatever.com")
+              </li>
+              <li>
+                створити каталог нового проекту ($ mk dir папка), або зайти внього ($ cd папка/папка)
+              </li>
+              <li>
+                проініціалізувати файли проекту через <span class="code">$ git init</span>, для перевірки використати <span class="code">$ git status</span>
+              </li>
+              <li>
+                для того, щоб GIT ігнорував певні папки або файли існує або потрібно створити файл (.gitignore) в якому вказати шлях до відповідного файлу/каталогу, для коментарів використовується символ (#)
+              </li>
+              <li>
+                після внесення змін у файлову структуру проекту їх необхідно внести до локального репозиторію, щоб в подальшому система за ними слідкувала (<span class="code">$ git add .</span> або $git add назва_файлу.розширення)
+              </li>
+              <li>
+                для внесення коментарів про проведену роботу і над проектом існує команда <span class="code">$ git commit -m “опис”</span>. Для перегляду історії коммітів <span class="code">$ git log</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3>
+              Робота з GITHUB <i class="fa fa-github-square"></i>
+            </h3>
+            <ul class="list">
+              <li>
+                Для початку потрібно зараєструватись на <a href="https://github.com/" target="_blank">https://github.com/</a>
+              </li>
+              <li>
+                Потім створити новий репозиторій для проекту (Create a new repository +)
+                <ul class="list">
+                  <li>вказати назву і опис проекту(необов’язково)</li>
+                  <li><i class="fa fa-check-circle"></i> на Public (Private платна опція)</li>
+                  <li>Initialize this repository with a README (те саме що і git init в консолі)</li>
+                </ul>
+              </li>
+              <li>
+                Далі з’явиться 2 варіанти підключання локально репозиторія до github
+                <ul class="list">
+                  <li>створити новий +команди</li>
+                  <li>підключити вже існуючий +команди</li>
+                </ul>
+              </li>
+              <li>
+                Коли все підключено, залишилось лиш вносити зміни в проект і заливати їх на github за допомогою <span class="code">$ git push</span>
+              </li>
+              <li>
+                Якщо потрібно стягнути з github вже внесені кимось правки або весь проект у свій репозиторій <span class="code">$ git pull</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <br>
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

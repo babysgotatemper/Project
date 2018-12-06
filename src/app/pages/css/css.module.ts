@@ -13,18 +13,20 @@ import { FontsComponent } from './components/fonts/fonts.component';
 import { PositionComponent } from './components/position/position.component';
 import { FlexboxComponent } from './components/flexbox/flexbox.component';
 import { Html5Css3Component } from './components/html5-css3/html5-css3.component';
-import {MatSidenavModule, MatTabsModule} from '@angular/material';
 import { CssAnimationsComponent } from './components/css-animations/css-animations.component';
 import { ResetComponent } from './components/reset/reset.component';
 import { VendorComponent } from './components/vendor/vendor.component';
 import {CustomMaterialModule} from '../../shared/custom-material/custom-material.module';
 import { CssProComponent } from './components/css-pro/css-pro.component';
 import { AdaptationComponent } from './components/adaptation/adaptation.component';
+import {SharedModule} from '../../shared/shared.module';
+import { OptimizationComponent } from './components/optimization/optimization.component';
 
 @NgModule({
   imports: [
     CommonModule,
     CustomMaterialModule,
+    SharedModule,
     RouterModule.forChild([
       {
         path: '', component: CssComponent, children: [
@@ -45,6 +47,7 @@ import { AdaptationComponent } from './components/adaptation/adaptation.componen
           {path: 'vendor', component: VendorComponent},
           {path: 'css-pro', component: CssProComponent},
           {path: 'adaptation', component: AdaptationComponent},
+          {path: 'optimization', component: OptimizationComponent},
         ],
       },
     ]),
@@ -67,6 +70,7 @@ import { AdaptationComponent } from './components/adaptation/adaptation.componen
     VendorComponent,
     CssProComponent,
     AdaptationComponent,
+    OptimizationComponent,
   ]
 })
 export class CssModule { }

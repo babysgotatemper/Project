@@ -1,0 +1,47 @@
+<mat-drawer-container class="example-container" hasBackdrop="true">
+<!--  <mat-drawer #drawer mode="over" class="pageNav">
+    <nav>
+      <a *ngFor="let item of pages"
+         class="pageNav-link"
+         routerLinkActive="pageNav-link&#45;&#45;active"
+         [routerLink]="item.link">
+        {{item.title}}
+      </a>
+    </nav>
+  </mat-drawer>-->
+  <mat-drawer-content>
+<!--    <button class="pageNav-toggle btn btn-primary btn-fab btn-fab-mini btn-round"
+            (click)="drawer.toggle()">
+      <i class="material-icons">
+        compare_arrows
+      </i>
+    </button>-->
+    <div class="page-header header-filter"
+         data-parallax="true"
+         style="background-image: url('assets/img/js/javascript-illustration.png')">
+    </div>
+
+    <div class="main main-raised">
+      <div class="container">
+        <div class="section text-center">
+          <h2 class="title">JS</h2>
+          <h4>JavaScript (JS) — динамічна, об'єктно-орієнтована прототипна мова програмування. Реалізація стандарту ECMAScript. Найчастіше використовується для створення сценаріїв веб-сторінок, що надає можливість на стороні клієнта (пристрої кінцевого користувача) взаємодіяти з користувачем, керувати браузером, асинхронно обмінюватися даними з сервером, змінювати структуру та зовнішній вигляд веб-сторінки.</h4>
+        <div class="section">
+          <h5>Мова JavaScript використовується для:</h5>
+          <ul class="list">
+            <li>написання сценаріїв веб-сторінок для надання їм інтерактивності;</li>
+            <li>створення односторінкових веб-застосунків (ReactJS, AngularJS, Vue.js);</li>
+            <li>програмування на стороні сервера (Node.js);</li>
+            <li>стаціонарних застосунків (Electron, NW.js);</li>
+            <li>мобільних застосунків (React Native, Cordova);</li>
+            <li>сценаріїв в прикладному ПЗ (наприклад, в програмах зі складу Adobe Creative Suite чи Apache JMeter);</li>
+            <li>всередині PDF-документів тощо.</li>
+          </ul>
+        </div>
+        </div>
+        <router-outlet></router-outlet>
+        <br>
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

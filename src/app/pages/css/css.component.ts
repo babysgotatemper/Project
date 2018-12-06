@@ -63,6 +63,9 @@ export class CssComponent implements OnInit {
     }, {
       'link': 'css-pro',
       'title': 'CSS-pro',
+    }, {
+      'link': 'optimization',
+      'title': 'Оптимізація',
     }
   ];
 

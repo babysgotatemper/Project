@@ -6,7 +6,6 @@ import { HomeComponent } from './pages/home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 import { TemplateComponent } from './pages/template/template.component';
-import {CustomMaterialModule} from './shared/custom-material/custom-material.module';
 
 @NgModule({
   declarations: [

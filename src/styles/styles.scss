@@ -28,28 +28,33 @@ body {
   }
 }
 
-.tag {
-  background-color: red;
+.code {
+  display: inline-block;
+  background: #000;
+  //color: #A377D0;
   color: #fff;
-  border-radius: $radius;
-  font-family: "Courier New";
   font-size: 18px;
-  font-weight: bold;
-  margin: 0 1px;
-  &:before,
-  &:after {
-    padding: 0 5px;
-    color: black;
+  padding: 5px;
+  margin: 0 2px;
+  border-radius: 4px;
+
+  & .code {
+    display: block;
   }
+}
+
+.tag {
   &:before {
     content: '<';
   }
   &:after {
     content: '>';
   }
+}
 
-  &-inner {
-    margin-left: 15px;
+.attr {
+  &:after {
+    content: '=" "';
   }
 }
 
@@ -69,6 +74,10 @@ body {
 
 .list {
   padding-left: 20px;
+
+  &-title {
+    list-style-type: none;
+  }
 
   li {
     margin: 10px 0;
@@ -153,5 +162,13 @@ section {
 
   section {
     scroll-snap-align: center;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-wrap {
+    flex-wrap: wrap;
   }
 }

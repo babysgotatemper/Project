@@ -7,8 +7,10 @@
 
   <div class="card-body">
     <blockquote class="blockquote">
-      Теги не чутливі до регістру <span class="tag">BR</span> <span class="tag">Br</span> <span
-      class="tag">br</span>
+      Теги не чутливі до регістру
+      <tag name="BR"></tag>
+      <tag name="Br"></tag>
+      <tag name="br"></tag>
     </blockquote>
 
     <blockquote class="blockquote">
@@ -18,7 +20,7 @@
 
     <blockquote class="blockquote">Щоб розширити можливості окремих тегів і більш гнучко управляти вмістом
       контейнерів застосовуються атрибути тегів.
-      <span class="tag">a href=""</span>
+      <tag name="a" inline="true" [attr]="['href', 'target']"></tag>
     </blockquote>
   </div>
 
@@ -29,9 +31,9 @@
         <div class="card-body">
           <h4 class="card-title text-center">Одинарні</h4>
           <div class="card-text">
-            <p><span class="tag">img src="" alt=""</span></p>
-            <p><span class="tag">br</span></p>
-            <p><span class="tag">hr</span></p>
+            <p><tag name="img" [attr]="['src','alt']"></tag></p>
+            <p><tag name="br" ></tag></p>
+            <p><tag name="hr"></tag></p>
           </div>
         </div>
       </div>
@@ -39,9 +41,9 @@
         <div class="card-body">
           <h4 class="card-title text-center">Парні</h4>
           <div class="card-text">
-            <p><span class="tag">div</span>...<span class="tag">/div</span></p>
-            <p><span class="tag">p</span>...<span class="tag">/p</span></p>
-            <p><span class="tag">h1..6</span>...<span class="tag">/h1..6</span></p>
+            <p><tag name="div"></tag></p>
+            <p><tag name="p"></tag></p>
+            <p><tag name="h1...6"></tag></p>
           </div>
         </div>
       </div>
@@ -55,24 +57,24 @@
           <br>
           <div class="card-text">
             <p>
-              <span class="tag">div</span>...<span class="tag">/div</span>
+              <tag name="div"></tag>
               універсальний блоковий контейнер, використовується для груповання елементів/тегів і надання їм стилів
               і позиціонування на сторінці.
             </p>
             <br>
             <p>
-              <span class="tag">p</span>...<span class="tag">/p</span>
+              <tag name="p"></tag>
               Визначає параграф (абзац) тексту
             </p>
             <br>
             <p>
-              <span class="tag">h1..6</span>...<span class="tag">/h1..6</span>
+              <tag name="h1...6"></tag>
               Ця група тегів визначає текстові заголовки різного рівня, які показують відносну важливість секції,
               розташованої після заголовка.
             </p>
             <br>
             <p>
-              <span class="tag">hr</span>
+              <tag name="hr"></tag>
               Малює горизонтальну лінію
             </p>
           </div>
@@ -89,19 +91,19 @@
           <br>
           <div class="card-text">
             <p>
-              <span class="tag">a href=""</span>...<span class="tag">/a</span>
+              <tag name="a" [attr]="['target']"></tag>
               є одним з найважливих елементів HTML і призначений для створення посилань.
             </p>
             <br>
             <p>
-              <span class="tag">img src="" alt=""</span>
+              <tag name="img" [attr]="['src', 'alt']"></tag>
               призначений для відображення на веб-сторінці зображень в графічному форматі GIF, JPEG або PNG. <br>
               - src - відносний або абсолютний URI зображення (обов'язковий) <br>
               - alt - короткий опис (відображається при відключеному трафіку)
             </p>
             <br>
             <p>
-              <span class="tag">span</span>...<span class="tag">/h1..6</span>
+              <tag name="span"></tag>
               контейнер призначений для визначення рядкового елементу всередині документу. використовується для
               виділення окремих слів
             </p>
@@ -117,22 +119,22 @@
       Теги верхнього рівня (Ці теги призначені для формування структури веб-сторінки і визначають розділ заголовка і
       тіла документа.
       <br>
-      <span class="tag">html</span>
-      <span class="tag">head</span>
-      <span class="tag">body</span>
+      <tag name="html" inline="true"></tag>
+      <tag name="head" inline="true"></tag>
+      <tag name="body" inline="true"></tag>
     </blockquote>
     <blockquote class="blockquote">
       Теги заголовку документу
       <br>
-      <span class="tag">title</span>
-      <span class="tag">meta</span>
-      <span class="tag">link</span>
+      <tag name="title" inline="true"></tag>
+      <tag name="meta" inline="true"></tag>
+      <tag name="link" inline="true"></tag>
     </blockquote>
 
     <blockquote class="blockquote">
       Теги елементу
       <br>
-      <span class="tag">body</span>
+      <tag name="body" inline="true"></tag>
     </blockquote>
   </div>
 </div>
@@ -156,10 +158,11 @@
           <br>
           <div class="row ">
             <div class="card-text col-md-5">
-              <span class="tag">ol</span><br>
-              <span class="tag tag-inner">li</span>...<span class="tag">li</span><br>
-              <span class="tag tag-inner">li</span>...<span class="tag">li</span><br>
-              <span class="tag">/ol</span>
+              <tag name="ol">
+                <tag name="li"></tag>
+                <tag name="li"></tag>
+                <tag name="li"></tag>
+              </tag>
             </div>
 
             <ol class="ol col-md-5">
@@ -182,10 +185,11 @@
           <br>
           <div class="row">
             <div class="card-text col-md-5">
-              <span class="tag">ul</span><br>
-              <span class="tag tag-inner">li</span>...<span class="tag">li</span><br>
-              <span class="tag tag-inner">li</span>...<span class="tag">li</span><br>
-              <span class="tag">/ul</span>
+              <tag name="ul">
+                <tag name="li"></tag>
+                <tag name="li"></tag>
+                <tag name="li"></tag>
+              </tag>
             </div>
 
             <ul class="ul col-md-5">
@@ -200,7 +204,7 @@
     </div>
 
     <p class="card-text">
-      <span class="tag">li</span> визначає окремий елемент списку. Зовнішній тег ul або ol встановлює тип списку - маркований або нумерований.
+      <tag name="li"></tag> визначає окремий елемент списку. Зовнішній тег ul або ol встановлює тип списку - маркований або нумерований.
     </p>
 
     <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank"

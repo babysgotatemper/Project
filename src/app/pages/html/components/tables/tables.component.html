@@ -1,0 +1,41 @@
+<section>
+  <div>
+    <h3>Таблиці</h3>
+    <p>Таблиця складається з рядків і комірок, які можуть містити текст і малюнки. </p>
+    <p>Зазвичай таблиці використовуються для впорядкування і представлення табличних даних.</p>
+
+    <ul class="list">
+      <li >
+        <tag name="table" inline="true"></tag>
+        Служить контейнером для елементів, що визначають вміст таблиці яка складається з
+        рядків і комірок, які задаються за
+        <tag name="tr" inline="true"></tag> <tag name="td" inline="true"></tag>
+      </li>
+      <li><tag name="tr"></tag> служить контейнером для створення рядка таблиці</li>
+      <li>
+        <tag name="td"></tag> Призначений для створення однієї комірки таблиці
+        <ul class="list">
+          <li><tag name="td" [attr]="['colspan']"></tag>атрибут colspan задає кількість стовпців, на які розтягується данa комірка.</li>
+          <li><tag name="td" [attr]="['rowspan']"></tag>як ви вже здогадалися, задає кількість рядків, на які розтягується комірка.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="flex">
+      <tag name="table">
+        <tag name="tr">
+          <tag name="td"></tag>
+          <tag name="td"></tag>
+        </tag>
+        <tag name="tr">
+          <tag name="td"></tag>
+          <tag name="td"></tag>
+        </tag>
+        <tag name="tr">
+          <tag name="td"></tag>
+          <tag name="td"></tag>
+        </tag>
+      </tag>
+    </div>
+  </div>
+</section>
