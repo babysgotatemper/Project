@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-html',
   templateUrl: './html.component.html',
-  styleUrls: ['./html.component.scss']
+  styleUrls: ['./html.component.scss'],
+  standalone: false
 })
 export class HtmlComponent implements OnInit {
   pages = [

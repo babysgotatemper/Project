@@ -11,9 +11,9 @@ import { GitComponent } from './git/git.component';
     CustomMaterialModule,
     RouterModule.forChild([
       { path: '', component: CoursesComponent},
-      { path: 'css', loadChildren: './css/css.module#CssModule'},
-      { path: 'html', loadChildren: './html/html.module#HtmlModule'},
-      { path: 'js', loadChildren: './js/js.module#JsModule'},
+      { path: 'css', loadChildren: () => import('./css/css.module').then(m => m.CssModule)},
+      { path: 'html', loadChildren: () => import('./html/html.module').then(m => m.HtmlModule)},
+      { path: 'js', loadChildren: () => import('./js/js.module').then(m => m.JsModule)},
       { path: 'git', component: GitComponent},
     ])
   ],

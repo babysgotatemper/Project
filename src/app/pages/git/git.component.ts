@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-git',
   templateUrl: './git.component.html',
-  styleUrls: ['./git.component.scss']
+  styleUrls: ['./git.component.scss'],
+  standalone: false
 })
 export class GitComponent implements OnInit {
 

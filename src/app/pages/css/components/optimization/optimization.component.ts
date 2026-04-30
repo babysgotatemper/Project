@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-optimization',
   templateUrl: './optimization.component.html',
-  styleUrls: ['./optimization.component.scss']
+  styleUrls: ['./optimization.component.scss'],
+  standalone: false
 })
 export class OptimizationComponent implements OnInit {
 

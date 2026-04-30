@@ -20,7 +20,7 @@ import { TemplateComponent } from './pages/template/template.component';
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'style', component: TemplateComponent},
-      {path: 'courses', loadChildren: './pages/pages.module#PagesModule'},
+      {path: 'courses', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)},
     ])
   ],
   providers: [],
