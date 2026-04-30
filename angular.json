@@ -21,6 +21,14 @@
             "scripts": []
           },
           "configurations": {
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "aot": false,
+              "vendorChunk": true,
+              "buildOptimizer": false
+            },
             "production": {
               "optimization": true,
               "outputHashing": "all",
@@ -37,18 +45,20 @@
                 }
               ]
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "cheat:build"
-          },
           "configurations": {
+            "development": {
+              "buildTarget": "cheat:build:development"
+            },
             "production": {
-              "browserTarget": "cheat:build:production"
+              "buildTarget": "cheat:build:production"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -71,7 +81,6 @@
       }
     }
   },
-  "defaultProject": "cheat",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
